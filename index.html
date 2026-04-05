@@ -49,21 +49,12 @@
                 w = maxW;
                 h = Math.floor((maxW / 4) * 3);
             }
-            const gameCanvas = document.querySelector("#GameCanvas");
-            const gameVideo = document.querySelector("#GameVideo");
-            const upperCanvas = document.querySelector("#UpperCanvas");
-            if (gameCanvas) {
-                gameCanvas.style.width = w + "px";
-                gameCanvas.style.height = h + "px";
-            }
-            if (gameVideo) {
-                gameVideo.style.width = w + "px";
-                gameVideo.style.height = h + "px";
-            }
-            if (upperCanvas) {
-                upperCanvas.style.width = w + "px";
-                upperCanvas.style.height = h + "px";
-            }
+            document.querySelector("#GameCanvas").style.width = w + "px";
+            document.querySelector("#GameCanvas").style.height = h + "px";
+            document.querySelector("#GameVideo").style.width = w + "px";
+            document.querySelector("#GameVideo").style.height = h + "px";
+            document.querySelector("#UpperCanvas").style.width = w + "px";
+            document.querySelector("#UpperCanvas").style.height = h + "px";
         }
         setInterval(applycanvasmode, 100);
 
